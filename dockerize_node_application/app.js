@@ -5,7 +5,7 @@ const PORT = 5001; // Define the port for the server
 
 // Route for `/code-abc`
 app.get('/code-abc', (req, res) => {
-    res.send('Welcome to code ABC - a learning platform based on Bangladesh');
+    res.send('Welcome to code ABC - a learning platform based on Bangladesh ');
 });
 
 // Route for `/error`
@@ -23,3 +23,4 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+

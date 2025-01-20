@@ -1,10 +1,12 @@
-FROM node:20
+FROM node
 
 WORKDIR /app
 
-COPY . .
+COPY package.json .
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 5001
 
